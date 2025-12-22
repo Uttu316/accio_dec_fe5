@@ -1,0 +1,30 @@
+.app_header {
+  background-color: #032541;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app_logo_side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+.app_nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+}
+.app_nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.app_nav a:hover {
+  color: #ffcc00;
+}
