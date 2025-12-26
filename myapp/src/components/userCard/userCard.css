@@ -1,0 +1,58 @@
+.userCard {
+  width: 14rem;
+  background-color: bisque;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.userCard:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  scale: 1.06;
+  transform: skewY(2deg);
+}
+
+.userCard_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid white;
+  object-fit: contain;
+}
+
+.userCard_name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.userCard_city {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 8px;
+  color: rgb(78, 78, 78);
+}
+.userCard_gender {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.userCard_btn {
+  width: 100%;
+  cursor: pointer;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
