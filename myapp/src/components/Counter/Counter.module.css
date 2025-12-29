@@ -1,0 +1,67 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 300px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+.counterTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.counterDisplay {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+}
+
+.counterButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.counterButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.addButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+}
+
+.minusButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.minusButton:hover {
+  background-color: #da190b;
+}

@@ -1,0 +1,120 @@
+.todolist {
+  background-color: #f8f9fa;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 500px;
+  border-radius: 15px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+.todolist_title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.input_container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input_field {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input_field:focus {
+  border-color: #007bff;
+}
+
+.add_button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add_button:hover {
+  background-color: #0056b3;
+}
+
+.tasklist {
+  margin-top: 20px;
+}
+
+.empty_message {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.task_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
+}
+
+.task_item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task_text {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #495057;
+}
+
+.delete_button {
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5IDYuNDFMMTcuNTkgNSAxMiAxMC41OSA2LjQxIDUgNSA2LjQxIDEwLjU5IDEyIDUgMTcuNTkgNi40MSAxOSA3LjU5IDE3LjU5IDEyIDEyLjQxIDE3LjU5IDE5IDE5IDE3LjU5IDEzLjQxIDEyIDE5IDYuNDFaIiBmaWxsPSIjZGMzNTQ1Ii8+Cjwvc3ZnPgo=")
+    no-repeat center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.delete_button:hover {
+  opacity: 1;
+}
+
+.button_group {
+  display: flex;
+  gap: 5px;
+}
+
+.edit_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffc107;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.edit_button:hover {
+  color: #e0a800;
+}

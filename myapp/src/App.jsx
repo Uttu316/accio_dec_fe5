@@ -1,6 +1,7 @@
 import Counter from "./components/Counter";
 import Footer from "./components/footer";
 import Header from "./components/header";
+import TodoList from "./components/todolist";
 import UserList from "./components/userList";
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <p>React is a javascript library for building user interfaces.</p>
       <UserList />
       <Counter />
+      <TodoList />
       <Footer />
     </>
   );
