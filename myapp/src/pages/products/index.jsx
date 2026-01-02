@@ -1,17 +1,17 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import ProductsFilter from "../../components/productsFilter";
 import ProductsList from "../../components/productsList";
 import { api } from "../../services";
 import styles from "./index.module.css";
+import ProductListWrapper from "../../components/productsList/ProdutListWrapper";
 
 const ProductsPage = () => {
-  const [selectedFilter, setFilter] = useState("all");
   const [products, setProducts] = useState([]);
   const [status, setStatus] = useState("loading");
 
-  const loadProducts = async () => {
+  const loadProducts = useCallback(async () => {
     try {
       const res = await api({
         endpoint: "/products",
@@ -22,7 +22,7 @@ const ProductsPage = () => {
       console.log(err);
       setStatus("error");
     }
-  };
+  }, []);
 
   useEffect(() => {
     loadProducts();
@@ -31,6 +31,8 @@ const ProductsPage = () => {
   const isLoading = status === "loading";
   const isError = status === "error";
   const isSuccess = status === "success";
+
+  console.log("Products Page Rendered");
 
   return (
     <div className={styles.container}>
@@ -45,15 +47,7 @@ const ProductsPage = () => {
           Something went wrong. Please try again later
         </p>
       )}
-      {isSuccess && (
-        <>
-          <ProductsFilter
-            setFilter={setFilter}
-            selectedFilter={selectedFilter}
-          />
-          <ProductsList selectedFilter={selectedFilter} products={products} />
-        </>
-      )}
+      {isSuccess && <ProductListWrapper products={products} />}
       <Footer />
     </div>
   );

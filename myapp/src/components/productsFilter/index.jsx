@@ -1,5 +1,5 @@
 import styles from "./index.module.css";
-
+import { memo } from "react";
 const ProductsFilter = ({ setFilter, selectedFilter }) => {
   return (
     <div className={styles.filterContainer}>
@@ -49,4 +49,4 @@ const FilterItem = ({ label, selectedFilter, value, onFilter }) => {
     </button>
   );
 };
-export default ProductsFilter;
+export default memo(ProductsFilter);

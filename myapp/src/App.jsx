@@ -1,12 +1,24 @@
 import PracticePage from "./pages/practice";
 import ProductsPage from "./pages/products";
+import HomePage from "./pages/home";
+import ContactPage from "./pages/contact";
+import AboutPage from "./pages/about";
+import NotFoundPage from "./pages/notfound";
+import { BrowserRouter, Route, Routes } from "react-router";
 
 const App = () => {
   return (
-    <>
-      {/* <PracticePage /> */}
-      <ProductsPage />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/practice" element={<PracticePage />} />
+        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/about" element={<AboutPage />} />
+
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

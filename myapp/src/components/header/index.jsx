@@ -1,7 +1,10 @@
 import "./header.css";
 import logo from "../../assets/react.svg";
+import React from "react";
+
 const Header = (props) => {
   const { title = "Hello" } = props;
+  console.log("rendering header");
   return (
     <header className="app_header">
       <div className="app_logo_side">
@@ -16,4 +19,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default React.memo(Header);

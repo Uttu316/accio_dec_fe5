@@ -1,0 +1,142 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactHero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contactHero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contactHero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contactForm {
+  display: flex;
+  padding: 50px;
+  background: #f8f9fa;
+  gap: 50px;
+}
+
+.formContainer {
+  flex: 1;
+}
+
+.formContainer h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.submitButton {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-self: flex-start;
+}
+
+.submitButton:hover {
+  background: #ff5252;
+}
+
+.contactInfo {
+  flex: 1;
+}
+
+.contactInfo h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.infoItem {
+  margin-bottom: 30px;
+}
+
+.infoItem h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #667eea;
+}
+
+.infoItem p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.map {
+  padding: 50px;
+  text-align: center;
+  background: white;
+}
+
+.map h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.mapImage {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .contactForm {
+    flex-direction: column;
+  }
+}
