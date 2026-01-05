@@ -1,8 +1,14 @@
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import styles from "./index.module.css";
+import { useNavigate } from "react-router";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
+  const onShopNow = () => {
+    navigate("/products");
+  };
   return (
     <div className={styles.container}>
       <Header title="Home" />
@@ -14,7 +20,9 @@ const HomePage = () => {
             Discover the latest trends in fashion, electronics, and more. Shop
             with ease and style.
           </p>
-          <button className={styles.ctaButton}>Shop Now</button>
+          <button onClick={onShopNow} className={styles.ctaButton}>
+            Shop Now
+          </button>
         </div>
         <img
           src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"

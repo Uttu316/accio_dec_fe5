@@ -28,3 +28,7 @@
 .app_nav a:hover {
   color: #ffcc00;
 }
+
+.app_nav a.active {
+  color: #ffcc00;
+}

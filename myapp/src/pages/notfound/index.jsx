@@ -21,10 +21,14 @@ const NotFoundPage = () => {
             moved, deleted, or you entered the wrong URL.
           </p>
           <div className={styles.buttons}>
-            <Link to="/" className={styles.homeButton}>
+            <Link to="/" replace={true} className={styles.homeButton}>
               Go to Home
             </Link>
-            <Link to="/products" className={styles.productsButton}>
+            <Link
+              to="/products"
+              replace={true}
+              className={styles.productsButton}
+            >
               Explore Products
             </Link>
           </div>
