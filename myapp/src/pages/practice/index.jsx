@@ -4,7 +4,7 @@ import Header from "../../components/header";
 import PageWrapper from "../../components/pageWrapper";
 import SaleController from "../../components/SaleBanner/saleController";
 import TodoList from "../../components/todolist";
-import UserList from "../../components/userlist";
+import UserList from "../../components/userList";
 const PracticePage = () => {
   return (
     <PageWrapper title="Practice">
