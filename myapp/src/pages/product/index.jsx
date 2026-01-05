@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { api } from "../../services";
 import styles from "./Product.module.css";
 import { FaStar, FaShoppingCart, FaBolt } from "react-icons/fa";
+import PageWrapper from "../../components/pageWrapper";
 
 const Product = () => {
   const { productId } = useParams();
@@ -42,8 +43,7 @@ const Product = () => {
   const hasNoProduct = isSuccess && (!product || !product.id);
 
   return (
-    <div>
-      <Header />
+    <PageWrapper>
       <div className={styles.container}>
         {hasProduct && (
           <div className={styles.breadcrumb}>
@@ -153,8 +153,7 @@ const Product = () => {
           </div>
         )}
       </div>
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 export default Product;

@@ -1,7 +1,6 @@
-import Header from "../../components/header";
-import Footer from "../../components/footer";
 import styles from "./index.module.css";
 import { useNavigate } from "react-router";
+import PageWrapper from "../../components/pageWrapper";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -10,9 +9,7 @@ const HomePage = () => {
     navigate("/products");
   };
   return (
-    <div className={styles.container}>
-      <Header title="Home" />
-
+    <PageWrapper className={styles.container} title="Home">
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1>Welcome to ShopEase</h1>
@@ -74,9 +71,7 @@ const HomePage = () => {
           shopping like never before.
         </p>
       </section>
-
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 

@@ -1,12 +1,9 @@
-import Header from "../../components/header";
-import Footer from "../../components/footer";
 import styles from "./index.module.css";
+import PageWrapper from "../../components/pageWrapper";
 
 const AboutPage = () => {
   return (
-    <div className={styles.container}>
-      <Header title="About" />
-
+    <PageWrapper className={styles.container} title="About">
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1>About ShopEase</h1>
@@ -132,9 +129,7 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 

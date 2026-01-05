@@ -6,6 +6,7 @@ import ProductsList from "../../components/productsList";
 import { api } from "../../services";
 import styles from "./index.module.css";
 import ProductListWrapper from "../../components/productsList/ProdutListWrapper";
+import PageWrapper from "../../components/pageWrapper";
 
 const ProductsPage = () => {
   const [products, setProducts] = useState([]);
@@ -35,9 +36,7 @@ const ProductsPage = () => {
   console.log("Products Page Rendered");
 
   return (
-    <div className={styles.container}>
-      <Header title="Products" />
-
+    <PageWrapper title="Products" className={styles.container}>
       <h1 className={styles.title}> Latest Products</h1>
       {isLoading && (
         <p className={styles.loading}>Loading products for you...</p>
@@ -48,8 +47,7 @@ const ProductsPage = () => {
         </p>
       )}
       {isSuccess && <ProductListWrapper products={products} />}
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 export default ProductsPage;

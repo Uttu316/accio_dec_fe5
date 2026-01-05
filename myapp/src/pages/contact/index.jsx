@@ -1,12 +1,9 @@
-import Header from "../../components/header";
-import Footer from "../../components/footer";
 import styles from "./index.module.css";
+import PageWrapper from "../../components/pageWrapper";
 
 const ContactPage = () => {
   return (
-    <div className={styles.container}>
-      <Header title="Contact" />
-
+    <PageWrapper className={styles.container} title="Contact">
       <section className={styles.contactHero}>
         <h1>Get In Touch</h1>
         <p>
@@ -81,9 +78,7 @@ const ContactPage = () => {
           className={styles.mapImage}
         />
       </section>
-
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 

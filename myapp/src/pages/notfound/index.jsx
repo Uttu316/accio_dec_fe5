@@ -2,12 +2,11 @@ import { Link } from "react-router";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import styles from "./index.module.css";
+import PageWrapper from "../../components/pageWrapper";
 
 const NotFoundPage = () => {
   return (
-    <div className={styles.container}>
-      <Header title="404" />
-
+    <PageWrapper title="Not Found" className={styles.container}>
       <section className={styles.notFound}>
         <div className={styles.content}>
           <img
@@ -34,9 +33,7 @@ const NotFoundPage = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 
